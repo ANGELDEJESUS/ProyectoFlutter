@@ -40,7 +40,7 @@ class _MenuDesplegable extends State<MenuDesplegable> {
             onTap: () {
               // Update the state of the app.
               // ...
-              Navigator.pushNamed(context, 'perfil');
+              Navigator.pushNamed(context, '/perfil');
             },
           ),
           ListTile(

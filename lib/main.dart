@@ -21,26 +21,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }*/
-
-class MyHomePage extends StatelessWidget {
-  final String title = 'Flutter Demo Home Page';
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      drawer: MenuDesplegable(),
-      appBar: AppBar(
-        // The title text which will be shown on the action bar
-        flexibleSpace: null,
-
-        actions: [],
-        title: Text(title),
-      ),
-      body: Center(
-        child: Text(
-          'Hello, World hahaha!',
-        ),
-      ),
-    );
-  }
-}

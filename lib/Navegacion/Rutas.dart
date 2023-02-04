@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:helloworld/Pantallas/MyHomePage.dart';
 import 'package:helloworld/Pantallas/Perfil.dart';
-import 'package:helloworld/main.dart';
 
 class Rutas extends StatelessWidget {
   // rutas disponibles en la app.
@@ -18,7 +18,7 @@ class Rutas extends StatelessWidget {
       // Application theme data, you can set the colors for the application as
       // you want
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.amber,
       ),
       // A widget which will be started on application startup
       // home: MyHomePage(), //MyHomePage(title: 'Flutter Demo Home Page'),

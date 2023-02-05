@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:helloworld/Pantallas/Configuraciones.dart';
 import 'package:helloworld/Pantallas/MyHomePage.dart';
 import 'package:helloworld/Pantallas/Perfil.dart';
 
@@ -10,6 +11,7 @@ class Rutas extends StatelessWidget {
   final _routes = {
     '/': (context) => MyHomePage(),
     '/perfil': (context) => Perfil(),
+    '/configuraciones': (context) => Configuraciones(),
   };
 
   @override

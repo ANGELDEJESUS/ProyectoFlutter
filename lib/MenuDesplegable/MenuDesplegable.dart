@@ -48,6 +48,7 @@ class _MenuDesplegable extends State<MenuDesplegable> {
             onTap: () {
               // Update the state of the app.
               // ...
+              Navigator.pushNamed(context, '/configuraciones');
             },
           ),
         ],

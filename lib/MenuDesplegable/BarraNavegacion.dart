@@ -1,6 +1,5 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
+import 'package:helloworld/Pantallas/Perfil.dart';
 
 class BarraNavegacion extends StatefulWidget {
   @override
@@ -23,11 +22,27 @@ class _BarraNavegacion extends State<BarraNavegacion> {
       onTap: (value) {
         // Respond to item press.
         setState(() => _currentIndex = value);
+        print(_currentIndex);
+        if (_currentIndex == 1) {
+          setState(() {
+            Navigator.pushNamed(context, '/musica');
+          });
+        }
+        if (_currentIndex == 0) {
+          setState(() {
+            Navigator.pushNamed(context, '/');
+          });
+        }
+        if (_currentIndex == 2) {
+          setState(() {
+            Navigator.pushNamed(context, '/musica');
+          });
+        }
       },
       items: [
         BottomNavigationBarItem(
-          icon: Icon(Icons.favorite),
-          label: "Musica",
+          icon: Icon(Icons.home),
+          label: "Home",
         ),
         BottomNavigationBarItem(
           icon: Icon(Icons.music_note),

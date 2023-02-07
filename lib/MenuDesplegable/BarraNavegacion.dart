@@ -30,12 +30,16 @@ class _BarraNavegacion extends State<BarraNavegacion> {
   }
 
   List<Widget> _pages = <Widget>[
-    Icon(
-      Icons.home,
-      size: 150,
+    Padding(
+      padding: const EdgeInsets.all(15),
+      child: Column(
+        children: [
+          FormularioHome(),
+        ],
+      ),
     ),
     Icon(
-      Icons.camera,
+      Icons.watch_rounded,
       size: 150,
     ),
     Icon(
@@ -43,7 +47,6 @@ class _BarraNavegacion extends State<BarraNavegacion> {
       size: 150,
     ),
   ];
-
   @override
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;

@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:helloworld/Pantallas/Configuraciones.dart';
 import 'package:helloworld/Pantallas/Musica.dart';
-import 'package:helloworld/Pantallas/MyHomePage.dart';
+import 'package:helloworld/MenuDesplegable/BarraNavegacion.dart';
 import 'package:helloworld/Pantallas/Perfil.dart';
 
 class Rutas extends StatelessWidget {
@@ -10,7 +10,7 @@ class Rutas extends StatelessWidget {
   // cada widget es una página diferente.
   String titulo = 'Titulo de Home Page';
   final _routes = {
-    '/': (context) => MyHomePage(),
+    '/': (context) => BarraNavegacion(),
     '/perfil': (context) => Perfil(),
     '/configuraciones': (context) => Configuraciones(),
     '/musica': (context) => Musica(),

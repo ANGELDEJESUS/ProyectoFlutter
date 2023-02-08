@@ -25,7 +25,7 @@ class _FormularioHome extends State<FormularioHome> {
           Inputs("Nombre Completo"),
           Inputs("Apellido 1"),
           Inputs("Apellido 2"),
-          Inputs(""),
+          Inputs("Carrera a Fin"),
         ],
       ),
     );

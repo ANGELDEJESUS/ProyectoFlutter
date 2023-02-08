@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:helloworld/Componentes/Steps.dart';
 import 'package:helloworld/MenuDesplegable/BarraMenu.dart';
 import 'package:helloworld/MenuDesplegable/MenuDesplegable.dart';
 import 'package:helloworld/Pantallas/MyHomePage.dart';
@@ -34,7 +35,8 @@ class _BarraNavegacion extends State<BarraNavegacion> {
       padding: const EdgeInsets.all(15),
       child: Column(
         children: [
-          FormularioHome(),
+          Steps(),
+          //FormularioHome(),
         ],
       ),
     ),

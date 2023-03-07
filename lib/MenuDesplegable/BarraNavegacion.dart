@@ -31,15 +31,7 @@ class _BarraNavegacion extends State<BarraNavegacion> {
   }
 
   List<Widget> _pages = <Widget>[
-    Padding(
-      padding: const EdgeInsets.all(15),
-      child: Column(
-        children: [
-          Steps(),
-          //FormularioHome(),
-        ],
-      ),
-    ),
+    Steps(),
     Icon(
       Icons.watch_rounded,
       size: 150,
@@ -53,6 +45,9 @@ class _BarraNavegacion extends State<BarraNavegacion> {
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
+    final _scrollController = ScrollController();
+    final _listItems = List.generate(1, (index) => "Item $index");
+
     return Scaffold(
       drawer: MenuDesplegable(),
       bottomNavigationBar: BottomNavigationBar(
@@ -79,12 +74,25 @@ class _BarraNavegacion extends State<BarraNavegacion> {
         ],
         currentIndex: _currentIndex,
       ),
-      body: Center(
-        child: Column(children: [
-          BarraMenu(encabezado),
-          _pages.elementAt(_currentIndex),
-        ]),
-      ),
+      body: Container(
+          child: Column(
+        children: <Widget>[
+          Row(
+            children: [
+              Expanded(child: BarraMenu(encabezado)),
+            ],
+          ),
+          Expanded(child: _pages.elementAt(_currentIndex)),
+        ],
+      )), /*ListView.builder(
+          controller: _scrollController,
+          itemCount: _listItems.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Column(children: [
+              BarraMenu(encabezado),
+              _pages.elementAt(_currentIndex)
+            ]);
+          }),*/
     );
   }
 }

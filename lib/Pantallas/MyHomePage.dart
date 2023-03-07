@@ -18,16 +18,15 @@ class _FormularioHome extends State<FormularioHome> {
 
   @override
   Widget build(BuildContext context) {
-    return Form(
-      child: Column(
-        children: <Widget>[
-          Text("AAAAA", style: TextStyle(fontFamily: 'bold', fontSize: 25)),
-          Inputs("Nombre Completo"),
-          Inputs("Apellido 1"),
-          Inputs("Apellido 2"),
-          Inputs("Carrera a Fin"),
-        ],
-      ),
+    return Column(
+      children: <Widget>[
+        Text("Datos Generales",
+            style: TextStyle(fontFamily: 'Bold', fontSize: 25)),
+        Inputs("Nombre Completo"),
+        Inputs("Apellido 1"),
+        Inputs("Apellido 2"),
+        Inputs("Carrera a Fin"),
+      ],
     );
   }
 }

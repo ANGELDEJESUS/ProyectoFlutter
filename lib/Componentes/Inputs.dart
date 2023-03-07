@@ -22,7 +22,7 @@ class Inputs extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15)),
             labelText: label,
           ),
-        ),
+        )
       ],
     );
   }
